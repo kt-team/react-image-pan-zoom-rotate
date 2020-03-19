@@ -59,12 +59,12 @@ const PanViewer = ({ image, alt }: PanViewerProps) => {
   const [rotation, setRotation] = React.useState(0);
 
   const zoomIn = () => {
-    setZoom(zoom + 0.2);
+    setZoom(zoom + 0.1);
   };
 
   const zoomOut = () => {
-    if (zoom >= 1) {
-      setZoom(zoom - 0.2);
+    if (zoom >= 0.2) {
+      setZoom(zoom - 0.1);
     }
   };
 
